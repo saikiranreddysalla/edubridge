@@ -1,0 +1,14 @@
+package com.edubridge.app2;
+
+import com.edubridge.app1.Calc;
+
+public class CalcTest extends Calc{
+
+
+	public static void main(String[] args, char[] Calc) {
+		
+		System.out.println(Calc);
+
+	}
+
+}

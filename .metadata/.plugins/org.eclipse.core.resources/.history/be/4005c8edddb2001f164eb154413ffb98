@@ -1,0 +1,26 @@
+package Muntithreading;
+
+import java.util.Iterator;
+
+class BahubaliThread extends Thread{
+	int total = 0;
+	
+	public void run() {
+		for(int i=1;i<=100;i++) {
+			total +=i;
+		}
+			
+		}
+	
+}
+
+public class InterThreadCommunication {
+	public static void main(String[] args) {
+		BahubaliThread b = new BahubaliThread();
+		b.start();
+		
+		System.out.println(b.total);
+		
+	}
+
+}

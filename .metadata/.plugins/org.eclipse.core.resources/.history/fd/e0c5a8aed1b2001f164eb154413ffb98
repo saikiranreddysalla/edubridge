@@ -1,0 +1,62 @@
+package Muntithreading;
+
+class RedThread extends Thread{
+	@Override
+	public void run () {
+		//define thread job
+		
+			System.out.println("Red");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+class OrangeThread extends Thread{
+	@Override
+	public void run () {
+		//define thread job
+		
+		System.out.println("Orange");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+class GreenThread extends Thread{
+	@Override
+	public void run () {
+		//define thread job
+		
+		System.out.println("Green");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+
+
+public class TrafficThread {
+
+	public static void main(String[] args) {
+		RedThread r = new RedThread();
+		r.start();
+		
+		OrangeThread o = new OrangeThread();
+		r.start();
+		
+		GreenThread g = new GreenThread();
+		r.start();
+		
+
+	}
+
+}

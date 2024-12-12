@@ -1,0 +1,16 @@
+package collections;
+
+import java.util.ArrayList;
+
+public class ArraylistDemoUsingString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList al = new ArrayList ();
+		al.add("java");
+		al.add("python");
+		System.out.println(al);
+
+	}
+
+}
